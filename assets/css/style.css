@@ -217,34 +217,31 @@ input[type=submit] {
   border: 0 none;
 }
 
-
+/* this is the header @640*/
 @media only screen and (max-width: 640px) {
-  #logo {
-    width: 100%;
-  }
-  .navcontainer {
-    height: 20%;
-    margin-left: 200px;
-  }
-  .navcontainer a{
-    color: grey;
-    margin-right: 15px;
-  }
-  nav {
-    margin-right: 135px;
-    
-  }
+ #masthead {
+   display: inline-block;
+   position: static;
+   width: 100%;
+ }
+ @media only screen and (max-width: 640px) {
+   #logo {
+     width: 100%
+   }
+  .nav {
+     width: 640 px;
+     margin-right: 135px;
+     text-align: center;
+   }
+ }
+ /* this is the page body @640*/
+@media only screen and (max-width: 640px) {
   #main-container {
-    display: block;
-    background-color: red
-  }
-  .auth-image {
-  
-    height: 300px;
-    width: 300px;
-    margin-left: 120px;  
+    position: center;
+    display: inline-block;
   }
 }
+
 
 @media only screen and (max-width: 768px) {
 
@@ -254,14 +251,3 @@ input[type=submit] {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
